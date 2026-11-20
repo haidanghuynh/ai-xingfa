@@ -130,6 +130,58 @@ $env:GEMINI_API_KEY='...'         # Google Gemini
 
 Không có key vẫn dùng được tab **Ảnh & AI**: bấm *Sinh prompt*, dán vào ChatGPT kèm ảnh, dán JSON trả về rồi *Nạp JSON để duyệt*.
 
+### 3.2 Triển khai nhanh trên máy khác
+
+**Linux / macOS / WSL / Git Bash** — clone xong chạy 2 lệnh:
+
+```bash
+git clone https://github.com/haidanghuynh/ai-xingfa.git
+cd ai-xingfa
+cp .env.example .env          # tuỳ chọn: điền OPENAI_API_KEY / GEMINI_API_KEY
+./scripts/deploy.sh           # tạo .venv + pip + npm ci + npm run build + kiểm tra
+./scripts/run.sh              # http://127.0.0.1:8010
+# cho máy khác trong LAN truy cập:
+HOST=0.0.0.0 PORT=8010 ./scripts/run.sh
+```
+
+- `./scripts/deploy.sh --no-web` nếu chưa cài Node (server dùng giao diện fallback `static/`).
+- `./scripts/deploy.sh --skip-install` chỉ build lại giao diện.
+- `./scripts/deploy.sh --check` chỉ kiểm tra Python ≥ 3.10 / Node ≥ 18.
+- `run.sh` tự nạp `.env` (HOST, PORT, API key) — không cần `export` thủ công.
+
+**Windows (PowerShell):**
+
+```powershell
+.\scripts\deploy.ps1          # -NoWeb / -SkipInstall
+.\scripts\run.ps1             # hoặc .\run.ps1
+```
+
+**Docker (máy đích không cần Python/Node):**
+
+```bash
+cp .env.example .env
+docker compose up -d --build      # http://localhost:8010
+docker compose logs -f
+```
+
+Volume `./config` và `./out` giữ catalogue/bảng giá/bản vẽ khi rebuild. FreeCAD không có trong container → dùng viewer 3D + OBJ; cần `.FCStd/.step/.stl` thì cài FreeCAD trên host.
+
+**Chạy nền trên VPS bằng systemd:**
+
+```bash
+sudo useradd -r -m -d /opt/xingfacad xingfa
+sudo git clone https://github.com/haidanghuynh/ai-xingfa.git /opt/xingfacad
+sudo chown -R xingfa:xingfa /opt/xingfacad
+sudo -u xingfa /opt/xingfacad/scripts/deploy.sh
+sudo cp /opt/xingfacad/deploy/xingfacad.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable --now xingfacad
+```
+
+Sửa `User=` / `WorkingDirectory=` trong `deploy/xingfacad.service` nếu đặt ở thư mục khác; mở firewall cổng 8010 nếu cần truy cập ngoài.
+
+**Lưu ý chung:** `web/dist` và `out/` không commit → `deploy.sh` bắt buộc build lại giao diện; API key chỉ nằm trong `.env` (đã `.gitignore`).
+
 ## 4. Quy trình sử dụng trên GUI
 
 1. **Tab 2 – Catalogue Xingfa**: chọn hệ (XF65/XF93/...) → sửa số liệu theo catalogue thật → tick *Đã xác nhận catalogue* → **Lưu hệ**. Sửa thêm **Bảng giá** (giá nhôm/kg, % nhân công, VAT...).
@@ -417,6 +469,10 @@ cad/
 │  ├─ pipeline.py     điều phối build
 │  ├─ api.py          FastAPI
 │  └─ cli.py          xfcad serve/build/validate/systems/demo/status
+├─ scripts/           deploy.sh / run.sh (bash), deploy.ps1 / run.ps1 (Windows) + công cụ dev
+├─ deploy/            xingfacad.service (systemd unit)
+├─ Dockerfile         build web + runtime Python (docker compose up -d --build)
+├─ docker-compose.yml, .env.example
 ├─ static/            GUI fallback (vanilla JS) khi chưa build web/dist
 ├─ web/               GUI chính: Vite + React + TS + Tailwind (xem 3.1)
 └─ tests/             pytest

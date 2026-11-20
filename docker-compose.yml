@@ -1,0 +1,17 @@
+services:
+  xingfacad:
+    build: .
+    image: xingfacad:latest
+    container_name: xingfacad
+    ports:
+      - "${PORT:-8010}:8010"
+    environment:
+      XFCAD_HOME: /app
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+    volumes:
+      # Giu catalogue / bang gia / du lieu khi rebuild image
+      - ./config:/app/config
+      - ./out:/app/out
+    restart: unless-stopped

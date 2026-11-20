@@ -1,10 +1,5 @@
-# Chạy XingfaCAD GUI mà không cần pip install -e .
-# Dùng: .\run.ps1            (mặc định cổng 8010)
+# Chay XingfaCAD GUI (tu dong dung .venv va nap .env)
+# Dung: .\run.ps1            (mac dinh 127.0.0.1:8010)
 #       .\run.ps1 --port 8020
-$ErrorActionPreference = 'Stop'
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$env:PYTHONIOENCODING = 'utf-8'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$env:PYTHONPATH = Join-Path $root 'src'
-Set-Location $root
-python -m xingfacad serve @args
+& (Join-Path $root 'scripts\run.ps1') @args

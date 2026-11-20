@@ -1,0 +1,12 @@
+* text=auto
+
+# Script/shell phải LF để chạy trên Linux/macOS/WSL
+*.sh text eol=lf
+Dockerfile text eol=lf
+docker-compose.yml text eol=lf
+*.service text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+
+# PowerShell giữ CRLF
+*.ps1 text eol=crlf
