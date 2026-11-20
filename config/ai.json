@@ -1,0 +1,36 @@
+{
+  "provider": "openai",
+  "temperature": 0.1,
+  "timeout_seconds": 120,
+  "providers": {
+    "openai": {
+      "label": "ChatGPT (OpenAI)",
+      "base_url": "https://api.openai.com/v1",
+      "model": "gpt-4o-mini",
+      "api_key_env": "OPENAI_API_KEY",
+      "vision": true
+    },
+    "gemini": {
+      "label": "Google Gemini",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta",
+      "model": "gemini-2.5-flash",
+      "api_key_env": "GEMINI_API_KEY",
+      "vision": true
+    },
+    "deepseek": {
+      "label": "DeepSeek (text)",
+      "base_url": "https://api.deepseek.com/v1",
+      "model": "deepseek-chat",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "vision": false
+    },
+    "local": {
+      "label": "Local / OpenAI-compatible",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "model": "qwen2.5-vl",
+      "api_key_env": "LOCAL_AI_KEY",
+      "vision": true
+    }
+  },
+  "note": "AI chỉ dùng để đọc ảnh → JSON spec (loại cửa, cánh, đố, hướng mở). Không bao giờ để AI sinh kích thước mm hay mã CAD — engine tất định tự vẽ DXF/SVG/3D từ catalogue."
+}

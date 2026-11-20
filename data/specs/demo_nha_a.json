@@ -1,0 +1,112 @@
+{
+  "project": {
+    "code": "DEMO-001",
+    "name": "Nha mau 2 tang - Q7",
+    "customer": "Anh Nguyen Van A",
+    "address": "Quan 7, TP.HCM",
+    "date": "2026-11-19",
+    "currency": "VND"
+  },
+  "defaults": {
+    "system": "XF65",
+    "color": "Trang su",
+    "hardware": "Kinlong",
+    "glass": {
+      "key": "cuong_luc_8",
+      "name": "Kinh cuong luc 8mm",
+      "thickness_mm": 8,
+      "price_per_m2": 420000
+    }
+  },
+  "items": [
+    {
+      "tag": "C1",
+      "room": "Phong khach",
+      "qty": 2,
+      "type": "casement",
+      "width_mm": 1800,
+      "height_mm": 2200,
+      "sill_mm": 900,
+      "system": "XF65",
+      "hinge_type": "hinge_3d",
+      "hinge_count": 3,
+      "lock_type": "lock_single",
+      "panels": [
+        {"kind": "sash", "open": "out", "dir": "left", "ratio": 0.5},
+        {"kind": "sash", "open": "out", "dir": "right", "ratio": 0.5}
+      ],
+      "transoms": [],
+      "notes": "Cua so mo quay 2 canh, co lam chan nang"
+    },
+    {
+      "tag": "C2",
+      "room": "Phong ngu 1",
+      "qty": 1,
+      "type": "casement",
+      "width_mm": 1400,
+      "height_mm": 2200,
+      "sill_mm": 900,
+      "system": "XF65",
+      "hinge_type": "hinge_3d_304",
+      "hinge_count": 4,
+      "lock_type": "lock_cylinder",
+      "panels": [
+        {"kind": "sash", "open": "out", "dir": "left", "ratio": 0.5},
+        {"kind": "sash", "open": "out", "dir": "right", "ratio": 0.5}
+      ],
+      "transoms": [
+        {"orientation": "h", "at_mm": 500, "profile": "transom", "band_above": "fixed"}
+      ],
+      "notes": "O kinh co dinh ben tren"
+    },
+    {
+      "tag": "C3",
+      "room": "Phong ngu 2",
+      "qty": 1,
+      "type": "sliding",
+      "width_mm": 2400,
+      "height_mm": 1800,
+      "sill_mm": 900,
+      "system": "XF93",
+      "lock_type": "lock_snap",
+      "panels": [
+        {"kind": "sash", "open": "slide", "dir": "none", "ratio": 1},
+        {"kind": "sash", "open": "slide", "dir": "none", "ratio": 1}
+      ],
+      "transoms": [],
+      "notes": "Cua lua 2 canh"
+    },
+    {
+      "tag": "D1",
+      "room": "Phong khach - ra san",
+      "qty": 1,
+      "type": "door_sliding",
+      "width_mm": 2700,
+      "height_mm": 2400,
+      "sill_mm": 0,
+      "system": "XF93",
+      "lock_type": "lock_multi2",
+      "panels": [
+        {"kind": "sash", "open": "slide", "dir": "none", "ratio": 1},
+        {"kind": "sash", "open": "slide", "dir": "none", "ratio": 1}
+      ],
+      "transoms": [],
+      "notes": "Cua di lua 2 canh"
+    },
+    {
+      "tag": "F1",
+      "room": "Cau thang",
+      "qty": 1,
+      "type": "fixed",
+      "width_mm": 1200,
+      "height_mm": 1500,
+      "sill_mm": 1200,
+      "system": "XF65",
+      "panels": [
+        {"kind": "fixed", "open": "none", "dir": "none", "ratio": 1}
+      ],
+      "transoms": [],
+      "notes": "O kinh co dinh lay sang"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "currency": "VND",
+  "effective_date": "2026-11-19",
+  "aluminum_price_per_kg": 95000,
+  "waste_percent": 3,
+  "labor_percent_of_material": 10,
+  "profit_percent": 18,
+  "vat_percent": 8,
+  "consumables_per_m2": 30000,
+  "transport_per_item": 200000,
+  "round_to": 1000,
+  "company": {
+    "name": "CÔNG TY NHÔM KÍNH XINGFA",
+    "address": "123 Đường ABC, TP.HCM",
+    "phone": "0900 000 000",
+    "tax_code": "0312345678"
+  },
+  "quote_terms": [
+    "Giá đã bao gồm nhôm, kính, phụ kiện, nhân công lắp đặt và vận chuyển trong nội thành.",
+    "Thời gian sản xuất và lắp đặt: 12 – 15 ngày kể từ ngày xác nhận đơn hàng và tạm ứng.",
+    "Thanh toán: tạm ứng 50% khi ký hợp đồng, 45% khi giao hàng, 5% sau nghiệm thu.",
+    "Bảo hành: 24 tháng phần nhôm và phụ kiện, 12 tháng phần kính; bảo trì miễn phí 12 tháng.",
+    "Báo giá có hiệu lực 15 ngày; kích thước sẽ được đo lại thực tế trước khi sản xuất."
+  ],
+  "note": "Sửa bảng giá tại tab Catalogue > Bảng giá. quote_terms: điều khoản in trên PDF báo giá."
+}

@@ -1,0 +1,43 @@
+{
+  "project": {
+    "code": "ANH-01",
+    "name": "Cua di 2 canh - o cho (uoc luong tu anh)",
+    "customer": "Chu nha (theo anh)",
+    "address": "Theo anh cung cap",
+    "date": "2026-11-20",
+    "currency": "VND",
+    "note": "Kich thuoc 1800x2200 la UOC LUONG tu ty le anh - phai do lai truoc khi san xuat."
+  },
+  "defaults": {
+    "system": "XF65",
+    "color": "Trang su",
+    "hardware": "Kinlong",
+    "glass": {
+      "key": "cuong_luc_8",
+      "name": "Kinh cuong luc 8mm",
+      "thickness_mm": 8,
+      "price_per_m2": 420000
+    }
+  },
+  "items": [
+    {
+      "tag": "D1",
+      "room": "O cho theo anh",
+      "qty": 1,
+      "type": "door_swing",
+      "width_mm": 1800,
+      "height_mm": 2200,
+      "sill_mm": 0,
+      "system": "XF65",
+      "hinge_type": "hinge_6in",
+      "hinge_count": 3,
+      "lock_type": "lock_multi2",
+      "panels": [
+        {"kind": "sash", "open": "out", "dir": "left", "ratio": 0.5},
+        {"kind": "sash", "open": "out", "dir": "right", "ratio": 0.5}
+      ],
+      "transoms": [],
+      "notes": "Cua di 2 canh mo quay, kinh cuong luc 8mm - kich thuoc uoc luong tu anh"
+    }
+  ]
+}

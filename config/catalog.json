@@ -1,0 +1,74 @@
+{
+  "glass": {
+    "trong_5": {
+      "name": "Kính trong 5mm",
+      "thickness_mm": 5,
+      "price_per_m2": 180000
+    },
+    "trong_8": {
+      "name": "Kính trong 8mm",
+      "thickness_mm": 8,
+      "price_per_m2": 300000
+    },
+    "cuong_luc_8": {
+      "name": "Kính cường lực 8mm",
+      "thickness_mm": 8,
+      "price_per_m2": 420000
+    },
+    "cuong_luc_10": {
+      "name": "Kính cường lực 10mm",
+      "thickness_mm": 10,
+      "price_per_m2": 650000
+    },
+    "dan_an_toan_8": {
+      "name": "Kính dán an toàn 8.38mm",
+      "thickness_mm": 8.38,
+      "price_per_m2": 780000
+    },
+    "hop_kinh_24": {
+      "name": "Kính hộp 24mm",
+      "thickness_mm": 24,
+      "price_per_m2": 1250000
+    }
+  },
+  "hardware": {
+    "components": {
+      "hinge": {"name": "Bản lề (mặc định)", "unit": "cái", "price": 45000, "note": "Dùng khi không chọn loại cụ thể"},
+      "hinge_2d": {"name": "Bản lề 2D inox 304", "unit": "cái", "price": 35000, "note": "Cửa nhẹ, cánh <= 1.2m"},
+      "hinge_3d": {"name": "Bản lề 3D (cối) inox 304", "unit": "cái", "price": 55000, "note": "Phổ thông cho cửa sổ mở quay"},
+      "hinge_3d_304": {"name": "Bản lề 3D inox 304 cao cấp", "unit": "cái", "price": 85000, "note": "Cửa lớn, tải nặng, chống ẩm"},
+      "hinge_4in": {"name": "Bản lề 4 inch", "unit": "cái", "price": 45000, "note": "Cánh lớn 600-900mm"},
+      "hinge_6in": {"name": "Bản lề 6 inch", "unit": "cái", "price": 75000, "note": "Cửa đi, cánh nặng > 40kg"},
+      "hinge_hidden": {"name": "Bản lề âm (hidden)", "unit": "cái", "price": 180000, "note": "Giấu bản lề, thẩm mỹ cao"},
+      "hinge_weld": {"name": "Bản lề hàn chữ A", "unit": "cái", "price": 30000, "note": "Hàn trực tiếp vào khung Xingfa"},
+      "handle": {"name": "Tay nắm đa điểm", "unit": "bộ", "price": 220000, "note": ""},
+      "lock": {"name": "Khóa (mặc định)", "unit": "bộ", "price": 75000, "note": "Dùng khi không chọn loại cụ thể"},
+      "lock_single": {"name": "Khóa đơn điểm", "unit": "bộ", "price": 120000, "note": "Tay nắm + 1 chốt, cửa sổ"},
+      "lock_multi2": {"name": "Khóa đa điểm 2 điểm", "unit": "bộ", "price": 450000, "note": "Cửa đi, an toàn hơn"},
+      "lock_multi3": {"name": "Khóa đa điểm 3 điểm", "unit": "bộ", "price": 650000, "note": "Cửa đi chính, chống cạy"},
+      "lock_snap": {"name": "Khóa sập / chốt sập", "unit": "bộ", "price": 45000, "note": "Cửa phụ, cửa thông phòng"},
+      "lock_lever": {"name": "Tay gạt có khóa", "unit": "bộ", "price": 250000, "note": "Cửa đi mở quay"},
+      "lock_cylinder": {"name": "Tay nắm tròn + khóa bi", "unit": "bộ", "price": 180000, "note": "Cửa sổ, cửa ban công"},
+      "lock_smart": {"name": "Khóa vân tay / thông minh", "unit": "bộ", "price": 2500000, "note": "Tuỳ chọn cao cấp"},
+      "wheel": {"name": "Bánh xe lùa đôi", "unit": "bộ", "price": 55000, "note": ""},
+      "stopper": {"name": "Chặn hành trình", "unit": "cái", "price": 25000, "note": ""},
+      "gasket": {"name": "Gioăng EPDM", "unit": "m", "price": 28000, "note": ""},
+      "silicone": {"name": "Keo silicone", "unit": "tuýp", "price": 85000, "note": ""},
+      "screw": {"name": "Vít + ke góc", "unit": "bộ", "price": 12000, "note": ""}
+    },
+    "hinge_options": ["hinge_2d", "hinge_3d", "hinge_3d_304", "hinge_4in", "hinge_6in", "hinge_hidden", "hinge_weld"],
+    "lock_options": ["lock_single", "lock_multi2", "lock_multi3", "lock_snap", "lock_lever", "lock_cylinder", "lock_smart"],
+    "per_leaf_by_type": {
+      "casement": {"hinge": 3, "handle": 1, "lock": 1, "stopper": 2},
+      "awning": {"hinge": 2, "handle": 1, "lock": 1, "stopper": 2},
+      "tilt_turn": {"hinge": 3, "handle": 1, "lock": 1, "stopper": 2},
+      "sliding": {"wheel": 2, "handle": 1, "lock": 1, "stopper": 2},
+      "door_swing": {"hinge": 3, "handle": 1, "lock": 1, "stopper": 2},
+      "door_sliding": {"wheel": 2, "handle": 1, "lock": 1, "stopper": 2},
+      "fixed": {}
+    },
+    "screw_per_bar": 1,
+    "gasket_waste_percent": 5,
+    "silicone_m_per_tube": 8
+  }
+}

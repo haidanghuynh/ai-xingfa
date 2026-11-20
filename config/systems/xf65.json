@@ -1,0 +1,49 @@
+{
+  "code": "XF65",
+  "name": "Xingfa 65 - cửa mở quay",
+  "brand": "Xingfa",
+  "kind": "casement",
+  "joint": "miter45",
+  "bar_length_mm": 6500,
+  "kerf_mm": 5,
+  "end_trim_mm": 30,
+  "verified": false,
+  "source": "Catalogue NCC - cần xác nhận lại số liệu",
+  "notes": "Hệ mở quay phổ biến cho cửa sổ và cửa đi. Số liệu dưới đây là mẫu, hãy sửa theo catalogue thật.",
+  "rules": {
+    "gap_frame_sash_mm": 6,
+    "sash_overlap_mm": 0,
+    "glass_rebate_mm": 12,
+    "glass_clearance_mm": 4,
+    "min_panel_width_mm": 350,
+    "max_panel_area_m2": 2.2,
+    "track_offset_mm": 30
+  },
+  "profiles": {
+    "frame": {
+      "key": "frame", "code": "XF65-KB", "name": "Khung bao",
+      "width_mm": 55, "depth_mm": 65, "wall_mm": 1.4,
+      "kg_per_m": 1.55, "glass_groove_mm": 24
+    },
+    "sash": {
+      "key": "sash", "code": "XF65-C", "name": "Cửa cánh",
+      "width_mm": 60, "depth_mm": 60, "wall_mm": 1.4,
+      "kg_per_m": 1.35, "glass_groove_mm": 24
+    },
+    "mullion": {
+      "key": "mullion", "code": "XF65-D", "name": "Đố đứng",
+      "width_mm": 45, "depth_mm": 65, "wall_mm": 1.4,
+      "kg_per_m": 1.1, "glass_groove_mm": 24
+    },
+    "transom": {
+      "key": "transom", "code": "XF65-DN", "name": "Đố ngang",
+      "width_mm": 45, "depth_mm": 65, "wall_mm": 1.4,
+      "kg_per_m": 1.05, "glass_groove_mm": 24
+    },
+    "bead": {
+      "key": "bead", "code": "XF65-NK", "name": "Nẹp kính",
+      "width_mm": 15, "depth_mm": 12, "wall_mm": 1.0,
+      "kg_per_m": 0.16, "glass_groove_mm": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "code": "XF60",
+  "name": "Xingfa 60 - cửa mở quay",
+  "brand": "Xingfa",
+  "kind": "casement",
+  "joint": "miter45",
+  "bar_length_mm": 6500,
+  "kerf_mm": 5,
+  "end_trim_mm": 30,
+  "verified": false,
+  "source": "Catalogue NCC - cần xác nhận lại số liệu",
+  "notes": "Hệ 60 trung gian giữa 55 và 65.",
+  "rules": {
+    "gap_frame_sash_mm": 6,
+    "sash_overlap_mm": 0,
+    "glass_rebate_mm": 12,
+    "glass_clearance_mm": 4,
+    "min_panel_width_mm": 350,
+    "max_panel_area_m2": 2.2,
+    "track_offset_mm": 30
+  },
+  "profiles": {
+    "frame": {
+      "key": "frame", "code": "XF60-KB", "name": "Khung bao",
+      "width_mm": 52, "depth_mm": 60, "wall_mm": 1.4,
+      "kg_per_m": 1.4, "glass_groove_mm": 24
+    },
+    "sash": {
+      "key": "sash", "code": "XF60-C", "name": "Cửa cánh",
+      "width_mm": 58, "depth_mm": 55, "wall_mm": 1.4,
+      "kg_per_m": 1.25, "glass_groove_mm": 24
+    },
+    "mullion": {
+      "key": "mullion", "code": "XF60-D", "name": "Đố đứng",
+      "width_mm": 42, "depth_mm": 60, "wall_mm": 1.4,
+      "kg_per_m": 1.05, "glass_groove_mm": 24
+    },
+    "transom": {
+      "key": "transom", "code": "XF60-DN", "name": "Đố ngang",
+      "width_mm": 42, "depth_mm": 60, "wall_mm": 1.4,
+      "kg_per_m": 1.0, "glass_groove_mm": 24
+    },
+    "bead": {
+      "key": "bead", "code": "XF60-NK", "name": "Nẹp kính",
+      "width_mm": 14, "depth_mm": 12, "wall_mm": 1.0,
+      "kg_per_m": 0.15, "glass_groove_mm": 0
+    }
+  }
+}

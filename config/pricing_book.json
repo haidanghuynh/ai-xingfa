@@ -1,0 +1,252 @@
+{
+  "currency": "VND",
+  "effective_date": "2026-11-20",
+  "settings": {
+    "vat_percent": 8.0,
+    "round_to": 1000.0,
+    "show_inc_vat": true
+  },
+  "groups": [
+    {
+      "code": "CSMQ",
+      "name": "Cửa sổ mở quay",
+      "item_types": [
+        "casement",
+        "awning",
+        "tilt_turn"
+      ],
+      "norm": {
+        "item_type": "casement",
+        "width_mm": 1800.0,
+        "height_mm": 2200.0,
+        "system": "XF65",
+        "panels": 2,
+        "glass_key": "cuong_luc_8",
+        "hinge_type": "hinge_3d",
+        "hinge_count": 3,
+        "lock_type": "lock_single"
+      },
+      "cost": {
+        "alum_kg_per_m2": 7.65,
+        "alum_price_per_kg": 95000.0,
+        "alum_waste_percent": 3.0,
+        "glass_m2_per_m2": 0.71,
+        "glass_price_per_m2": 420000.0,
+        "glass_waste_percent": 5.0,
+        "hardware_items": [
+          {
+            "key": "hinge_3d",
+            "qty_per_set": 6.0,
+            "price": 55000.0
+          },
+          {
+            "key": "lock_single",
+            "qty_per_set": 2.0,
+            "price": 120000.0
+          },
+          {
+            "key": "handle",
+            "qty_per_set": 2.0,
+            "price": 220000.0
+          },
+          {
+            "key": "stopper",
+            "qty_per_set": 4.0,
+            "price": 25000.0
+          }
+        ],
+        "hardware_waste_percent": 0.0,
+        "consumables_per_m2": 35000.0,
+        "labor_production_per_m2": 120000.0,
+        "labor_install_per_m2": 80000.0,
+        "factory_per_m2": 60000.0,
+        "packaging_per_m2": 15000.0,
+        "transport_per_m2": 25000.0,
+        "warranty_percent": 1.5,
+        "management_percent": 3.0,
+        "finance_percent": 0.5
+      }
+    },
+    {
+      "code": "CD",
+      "name": "Cửa đi",
+      "item_types": [
+        "door_swing",
+        "door_sliding"
+      ],
+      "norm": {
+        "item_type": "door_swing",
+        "width_mm": 1800.0,
+        "height_mm": 2400.0,
+        "system": "XF65",
+        "panels": 2,
+        "glass_key": "cuong_luc_8",
+        "hinge_type": "hinge_6in",
+        "hinge_count": 3,
+        "lock_type": "lock_multi2"
+      },
+      "cost": {
+        "alum_kg_per_m2": 8.0,
+        "alum_price_per_kg": 95000.0,
+        "alum_waste_percent": 3.0,
+        "glass_m2_per_m2": 0.74,
+        "glass_price_per_m2": 420000.0,
+        "glass_waste_percent": 5.0,
+        "hardware_items": [
+          {
+            "key": "hinge_6in",
+            "qty_per_set": 6.0,
+            "price": 75000.0
+          },
+          {
+            "key": "lock_multi2",
+            "qty_per_set": 2.0,
+            "price": 450000.0
+          },
+          {
+            "key": "handle",
+            "qty_per_set": 2.0,
+            "price": 220000.0
+          },
+          {
+            "key": "stopper",
+            "qty_per_set": 4.0,
+            "price": 25000.0
+          }
+        ],
+        "hardware_waste_percent": 0.0,
+        "consumables_per_m2": 40000.0,
+        "labor_production_per_m2": 140000.0,
+        "labor_install_per_m2": 110000.0,
+        "factory_per_m2": 60000.0,
+        "packaging_per_m2": 20000.0,
+        "transport_per_m2": 35000.0,
+        "warranty_percent": 1.5,
+        "management_percent": 3.0,
+        "finance_percent": 0.5
+      }
+    },
+    {
+      "code": "CL",
+      "name": "Cửa sổ lùa",
+      "item_types": [
+        "sliding"
+      ],
+      "norm": {
+        "item_type": "sliding",
+        "width_mm": 2000.0,
+        "height_mm": 1600.0,
+        "system": "XF93",
+        "panels": 2,
+        "glass_key": "cuong_luc_8",
+        "hinge_type": null,
+        "hinge_count": 0,
+        "lock_type": "lock_snap"
+      },
+      "cost": {
+        "alum_kg_per_m2": 8.2,
+        "alum_price_per_kg": 95000.0,
+        "alum_waste_percent": 3.0,
+        "glass_m2_per_m2": 0.72,
+        "glass_price_per_m2": 420000.0,
+        "glass_waste_percent": 5.0,
+        "hardware_items": [
+          {
+            "key": "wheel",
+            "qty_per_set": 4.0,
+            "price": 55000.0
+          },
+          {
+            "key": "lock_snap",
+            "qty_per_set": 2.0,
+            "price": 45000.0
+          },
+          {
+            "key": "handle",
+            "qty_per_set": 2.0,
+            "price": 220000.0
+          },
+          {
+            "key": "stopper",
+            "qty_per_set": 4.0,
+            "price": 25000.0
+          }
+        ],
+        "hardware_waste_percent": 0.0,
+        "consumables_per_m2": 35000.0,
+        "labor_production_per_m2": 130000.0,
+        "labor_install_per_m2": 90000.0,
+        "factory_per_m2": 60000.0,
+        "packaging_per_m2": 15000.0,
+        "transport_per_m2": 25000.0,
+        "warranty_percent": 1.5,
+        "management_percent": 3.0,
+        "finance_percent": 0.5
+      }
+    },
+    {
+      "code": "VK",
+      "name": "Vách kính / cố định",
+      "item_types": [
+        "fixed"
+      ],
+      "norm": {
+        "item_type": "fixed",
+        "width_mm": 1200.0,
+        "height_mm": 2000.0,
+        "system": "XF65",
+        "panels": 1,
+        "glass_key": "cuong_luc_8",
+        "hinge_type": null,
+        "hinge_count": 0,
+        "lock_type": "none"
+      },
+      "cost": {
+        "alum_kg_per_m2": 4.5,
+        "alum_price_per_kg": 95000.0,
+        "alum_waste_percent": 3.0,
+        "glass_m2_per_m2": 1.0,
+        "glass_price_per_m2": 420000.0,
+        "glass_waste_percent": 5.0,
+        "hardware_items": [],
+        "hardware_waste_percent": 0.0,
+        "consumables_per_m2": 30000.0,
+        "labor_production_per_m2": 90000.0,
+        "labor_install_per_m2": 70000.0,
+        "factory_per_m2": 50000.0,
+        "packaging_per_m2": 10000.0,
+        "transport_per_m2": 20000.0,
+        "warranty_percent": 1.5,
+        "management_percent": 3.0,
+        "finance_percent": 0.5
+      }
+    }
+  ],
+  "levels": [
+    {
+      "code": "le",
+      "name": "Khách lẻ",
+      "margin_percent": 20.0,
+      "discount_percent": 0.0,
+      "include_install": true,
+      "show_in_quote": true
+    },
+    {
+      "code": "dl1",
+      "name": "Đại lý cấp 1",
+      "margin_percent": 20.0,
+      "discount_percent": 10.0,
+      "include_install": true,
+      "show_in_quote": true
+    },
+    {
+      "code": "ct",
+      "name": "Công trình",
+      "margin_percent": 15.0,
+      "discount_percent": 5.0,
+      "include_install": true,
+      "show_in_quote": true
+    }
+  ],
+  "note": "Bảng giá công bố CHƯA VAT. Sửa định mức/đơn giá ở tab Giá thành & Bảng giá; giá NCC nên đồng bộ với tab Catalogue."
+}

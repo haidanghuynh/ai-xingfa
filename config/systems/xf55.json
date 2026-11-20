@@ -1,0 +1,49 @@
+{
+  "code": "XF55",
+  "name": "Xingfa 55 - cửa mở quay (bản mỏng)",
+  "brand": "Xingfa",
+  "kind": "casement",
+  "joint": "miter45",
+  "bar_length_mm": 6500,
+  "kerf_mm": 5,
+  "end_trim_mm": 30,
+  "verified": false,
+  "source": "Catalogue NCC - cần xác nhận lại số liệu",
+  "notes": "Hệ 55 thanh mỏng, phù hợp cửa sổ nhỏ, vách kính.",
+  "rules": {
+    "gap_frame_sash_mm": 6,
+    "sash_overlap_mm": 0,
+    "glass_rebate_mm": 12,
+    "glass_clearance_mm": 4,
+    "min_panel_width_mm": 350,
+    "max_panel_area_m2": 2.0,
+    "track_offset_mm": 30
+  },
+  "profiles": {
+    "frame": {
+      "key": "frame", "code": "XF55-KB", "name": "Khung bao",
+      "width_mm": 50, "depth_mm": 55, "wall_mm": 1.2,
+      "kg_per_m": 1.25, "glass_groove_mm": 24
+    },
+    "sash": {
+      "key": "sash", "code": "XF55-C", "name": "Cửa cánh",
+      "width_mm": 55, "depth_mm": 50, "wall_mm": 1.2,
+      "kg_per_m": 1.1, "glass_groove_mm": 24
+    },
+    "mullion": {
+      "key": "mullion", "code": "XF55-D", "name": "Đố đứng",
+      "width_mm": 40, "depth_mm": 55, "wall_mm": 1.2,
+      "kg_per_m": 0.95, "glass_groove_mm": 24
+    },
+    "transom": {
+      "key": "transom", "code": "XF55-DN", "name": "Đố ngang",
+      "width_mm": 40, "depth_mm": 55, "wall_mm": 1.2,
+      "kg_per_m": 0.9, "glass_groove_mm": 24
+    },
+    "bead": {
+      "key": "bead", "code": "XF55-NK", "name": "Nẹp kính",
+      "width_mm": 14, "depth_mm": 11, "wall_mm": 1.0,
+      "kg_per_m": 0.14, "glass_groove_mm": 0
+    }
+  }
+}

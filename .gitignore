@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+out/
+*.log
+*.FCStd1
+
+# frontend
+web/node_modules/
+web/dist/
+web/.vite/
